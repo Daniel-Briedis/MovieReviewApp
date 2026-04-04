@@ -1,0 +1,12 @@
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\bin\Debug\MovieReviewApp.exe.config
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\bin\Debug\MovieReviewApp.exe
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\bin\Debug\MovieReviewApp.pdb
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.csproj.AssemblyReference.cache
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.Form1.resources
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.LoginForm.resources
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.Properties.Resources.resources
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.exe
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.pdb
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.Main.resources
