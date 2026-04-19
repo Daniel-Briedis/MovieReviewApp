@@ -33,7 +33,8 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtCounter = new System.Windows.Forms.TextBox();
             this.DONTUSE = new System.Windows.Forms.ListBox();
-            this.rtbReviewed = new System.Windows.Forms.RichTextBox();
+            this.lbMovies = new System.Windows.Forms.ListBox();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 32);
+            this.label2.Location = new System.Drawing.Point(12, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             // txtCounter
             // 
-            this.txtCounter.Location = new System.Drawing.Point(116, 29);
+            this.txtCounter.Location = new System.Drawing.Point(116, 34);
             this.txtCounter.Name = "txtCounter";
             this.txtCounter.ReadOnly = true;
             this.txtCounter.Size = new System.Drawing.Size(34, 20);
@@ -79,19 +80,31 @@
             this.DONTUSE.TabIndex = 4;
             this.DONTUSE.SelectedIndexChanged += new System.EventHandler(this.lbMovies_SelectedIndexChanged);
             // 
-            // rtbReviewed
+            // lbMovies
             // 
-            this.rtbReviewed.Location = new System.Drawing.Point(15, 68);
-            this.rtbReviewed.Name = "rtbReviewed";
-            this.rtbReviewed.ReadOnly = true;
-            this.rtbReviewed.Size = new System.Drawing.Size(192, 137);
-            this.rtbReviewed.TabIndex = 5;
-            this.rtbReviewed.Text = "";
+            this.lbMovies.FormattingEnabled = true;
+            this.lbMovies.Location = new System.Drawing.Point(12, 70);
+            this.lbMovies.Name = "lbMovies";
+            this.lbMovies.Size = new System.Drawing.Size(212, 160);
+            this.lbMovies.TabIndex = 6;
+            this.lbMovies.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lbMovies.DoubleClick += new System.EventHandler(this.lbMovies_DoubleClick);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(264, 213);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(65, 23);
+            this.btnRemove.TabIndex = 10;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // ViewProfile
             // 
-            this.ClientSize = new System.Drawing.Size(251, 217);
-            this.Controls.Add(this.rtbReviewed);
+            this.ClientSize = new System.Drawing.Size(341, 248);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.lbMovies);
             this.Controls.Add(this.DONTUSE);
             this.Controls.Add(this.txtCounter);
             this.Controls.Add(this.txtUser);
@@ -99,6 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ViewProfile";
             this.Text = "Profile";
+            this.Load += new System.EventHandler(this.ViewProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +128,7 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtCounter;
         private System.Windows.Forms.ListBox DONTUSE;
-        private System.Windows.Forms.RichTextBox rtbReviewed;
+        private System.Windows.Forms.ListBox lbMovies;
+        private System.Windows.Forms.Button btnRemove;
     }
 }

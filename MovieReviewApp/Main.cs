@@ -54,5 +54,25 @@ namespace MovieReviewApp
                 profile.ShowDialog();
             }
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AddMovie().ShowDialog();
+        }
+
+        private void btnReview_Click(object sender, EventArgs e)
+        {
+            if (Program.CurrentUser.Movies.Count == 0)
+            {
+                MessageBox.Show("Add a movie first before writing a review.");
+                return;
+            }
+            new AddEditReview().ShowDialog();
+        }
     }
 }

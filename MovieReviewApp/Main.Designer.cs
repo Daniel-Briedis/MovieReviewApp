@@ -32,6 +32,8 @@
             this.btnEditPf = new System.Windows.Forms.Button();
             this.lbOtherPf = new System.Windows.Forms.ListBox();
             this.lblUsers = new System.Windows.Forms.Label();
+            this.btnAddMovie = new System.Windows.Forms.Button();
+            this.btnReview = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProfle
@@ -46,7 +48,7 @@
             // 
             // btnEditPf
             // 
-            this.btnEditPf.Location = new System.Drawing.Point(13, 51);
+            this.btnEditPf.Location = new System.Drawing.Point(12, 41);
             this.btnEditPf.Name = "btnEditPf";
             this.btnEditPf.Size = new System.Drawing.Size(75, 23);
             this.btnEditPf.TabIndex = 1;
@@ -73,17 +75,40 @@
             this.lblUsers.TabIndex = 3;
             this.lblUsers.Text = "Other Profiles:";
             // 
+            // btnAddMovie
+            // 
+            this.btnAddMovie.Location = new System.Drawing.Point(12, 70);
+            this.btnAddMovie.Name = "btnAddMovie";
+            this.btnAddMovie.Size = new System.Drawing.Size(75, 23);
+            this.btnAddMovie.TabIndex = 4;
+            this.btnAddMovie.Text = "Add Movie";
+            this.btnAddMovie.UseVisualStyleBackColor = true;
+            this.btnAddMovie.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnReview
+            // 
+            this.btnReview.Location = new System.Drawing.Point(12, 201);
+            this.btnReview.Name = "btnReview";
+            this.btnReview.Size = new System.Drawing.Size(109, 23);
+            this.btnReview.TabIndex = 5;
+            this.btnReview.Text = "Write / Edit Review";
+            this.btnReview.UseVisualStyleBackColor = true;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 252);
+            this.Controls.Add(this.btnReview);
+            this.Controls.Add(this.btnAddMovie);
             this.Controls.Add(this.lblUsers);
             this.Controls.Add(this.lbOtherPf);
             this.Controls.Add(this.btnEditPf);
             this.Controls.Add(this.btnProfle);
             this.Name = "Main";
             this.Text = "Movie Reviews";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +120,7 @@
         private System.Windows.Forms.Button btnEditPf;
         private System.Windows.Forms.ListBox lbOtherPf;
         private System.Windows.Forms.Label lblUsers;
+        private System.Windows.Forms.Button btnAddMovie;
+        private System.Windows.Forms.Button btnReview;
     }
 }

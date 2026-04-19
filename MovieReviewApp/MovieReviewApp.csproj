@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEditReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditReview.Designer.cs">
+      <DependentUpon>AddEditReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,18 @@
     <Compile Include="ViewProfile.Designer.cs">
       <DependentUpon>ViewProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReview.Designer.cs">
+      <DependentUpon>ViewReview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEditReview.resx">
+      <DependentUpon>AddEditReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewProfile.resx">
       <DependentUpon>ViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReview.resx">
+      <DependentUpon>ViewReview.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

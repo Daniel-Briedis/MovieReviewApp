@@ -54,5 +54,10 @@ namespace MovieReviewApp
             new LoginForm().Show();
             this.Close();
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
