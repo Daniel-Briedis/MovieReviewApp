@@ -10,3 +10,5 @@ C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewA
 C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.pdb
 C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.Main.resources
 C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.RegisterForm.resources
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.EditProfile.resources
+C:\Users\danie\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\MovieReviewApp.ViewProfile.resources
