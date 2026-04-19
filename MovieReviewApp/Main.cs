@@ -74,5 +74,20 @@ namespace MovieReviewApp
             }
             new AddEditReview().ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new MoviesForm().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new AdminUsers().ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new MoviesForm().ShowDialog();
+        }
     }
 }
