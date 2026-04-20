@@ -89,5 +89,13 @@ namespace MovieReviewApp
         {
             new MoviesForm().ShowDialog();
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            Program.CurrentUser = null;
+            var login = new LoginForm();
+            login.ShowDialog();
+            this.Close();
+        }
     }
 }
