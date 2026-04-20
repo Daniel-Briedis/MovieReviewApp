@@ -67,11 +67,6 @@ namespace MovieReviewApp
 
         private void btnReview_Click(object sender, EventArgs e)
         {
-            if (Program.CurrentUser.Movies.Count == 0)
-            {
-                MessageBox.Show("Add a movie first before writing a review.");
-                return;
-            }
             new AddEditReview().ShowDialog();
         }
 
@@ -93,8 +88,7 @@ namespace MovieReviewApp
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
             Program.CurrentUser = null;
-            var login = new LoginForm();
-            login.ShowDialog();
+            new LoginForm().ShowDialog();
             this.Close();
         }
     }

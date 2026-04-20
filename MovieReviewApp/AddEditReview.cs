@@ -20,11 +20,17 @@ namespace MovieReviewApp
         private void LoadMovies()
         {
             cmbMovies.Items.Clear();
-            foreach (var movie in Program.CurrentUser.Movies)
-                cmbMovies.Items.Add(movie.Title);
+
+            foreach (var user in Program.AllUsers)
+            {
+                foreach (var movie in user.Movies)
+                {
+                    cmbMovies.Items.Add(movie.Title);
+                }
+            }
         }
 
-        
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (cmbMovies.SelectedItem == null)
@@ -47,7 +53,6 @@ namespace MovieReviewApp
 
             Movie movie = Program.CurrentUser.Movies.Find(m => m.Title == cmbMovies.SelectedItem.ToString());
 
-            // Pre-fill if a review already exists
             txtReview.Text = movie.ReviewText;
             numRating.Value = movie.StarRating >= 1 ? (decimal)movie.StarRating : 1;
         }
